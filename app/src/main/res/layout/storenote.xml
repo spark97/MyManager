@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Data"
+        android:id="@+id/textView14"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/note"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11"
+        android:text="Enter Data Here" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SaveDetails"
+        android:id="@+id/save"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.11"
+        android:onClick="savenote" />
+
+</LinearLayout>

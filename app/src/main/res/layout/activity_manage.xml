@@ -1,0 +1,190 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mnnit.harshitshah.mymanager.manage">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Edit Expenses"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Food"
+        android:id="@+id/food"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Clothes"
+        android:id="@+id/clothes"
+        android:textSize="35dp"
+        android:layout_below="@+id/food"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movies"
+        android:id="@+id/movies"
+        android:textSize="35dp"
+        android:layout_below="@+id/clothes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recharge/Bill"
+        android:id="@+id/recharge"
+        android:textSize="35dp"
+        android:layout_below="@+id/movies"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Parties"
+        android:id="@+id/parties"
+        android:textSize="35dp"
+        android:layout_below="@+id/recharge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Other"
+        android:id="@+id/textView3"
+        android:textSize="35dp"
+        android:layout_below="@+id/parties"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/foodedit"
+        android:layout_alignBottom="@+id/food"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/saveedit"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/clothesedit"
+        android:layout_alignStart="@+id/clothesedit"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/clothesedit"
+        android:layout_above="@+id/movies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/moviesedit"
+        android:layout_alignStart="@+id/moviesedit"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/moviesedit"
+        android:layout_alignTop="@+id/movies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rechargeedit"
+        android:layout_alignTop="@+id/recharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/recharge"
+        android:layout_alignLeft="@+id/moviesedit"
+        android:layout_alignStart="@+id/moviesedit"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/partiesedit"
+        android:layout_alignTop="@+id/parties"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/recharge"
+        android:layout_alignLeft="@+id/rechargeedit"
+        android:layout_alignStart="@+id/rechargeedit"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/othersedit"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/partiesedit"
+        android:layout_alignStart="@+id/partiesedit"
+        android:text="0" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:id="@+id/saveedit"
+        android:onClick="saveedit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Savings"
+        android:id="@+id/savings"
+        android:layout_alignTop="@+id/saveedit"
+        android:layout_toRightOf="@+id/recharge"
+        android:layout_toEndOf="@+id/recharge"
+        android:onClick="savings" />
+
+</RelativeLayout>

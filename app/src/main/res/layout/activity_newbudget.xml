@@ -1,0 +1,180 @@
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mnnit.harshitshah.mymanager.newbudget"
+    android:id="@+id/R"
+    android:scrollIndicators="top|left|bottom|start|end|right"
+    android:backgroundTint="#ffd853">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enter Expenses"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Food"
+        android:id="@+id/food"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Clothes"
+        android:id="@+id/clothes"
+        android:textSize="35dp"
+        android:layout_below="@+id/food"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Movies"
+        android:id="@+id/movies"
+        android:textSize="35dp"
+        android:layout_below="@+id/clothes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Recharge/Bill"
+        android:id="@+id/recharge"
+        android:textSize="35dp"
+        android:layout_below="@+id/movies"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Parties"
+        android:id="@+id/parties"
+        android:textSize="35dp"
+        android:layout_below="@+id/recharge"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:id="@+id/save"
+        android:onClick="savedetails"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/movies"
+        android:layout_toEndOf="@+id/movies" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/foodedit"
+        android:layout_alignBottom="@+id/food"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/recharge"
+        android:layout_toRightOf="@+id/recharge"
+        android:layout_marginTop="10dp"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/clothesexpense"
+        android:layout_above="@+id/movies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/foodedit"
+        android:layout_alignStart="@+id/foodedit"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/moviesexpense"
+        android:layout_alignTop="@+id/movies"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/recharge"
+        android:layout_toEndOf="@+id/recharge"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/rechargeexpense"
+        android:layout_alignTop="@+id/recharge"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/recharge"
+        android:layout_toEndOf="@+id/recharge"
+        android:text="0" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/partiesedit"
+        android:layout_alignTop="@+id/parties"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/recharge"
+        android:layout_toEndOf="@+id/recharge"
+        android:text="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Other"
+        android:id="@+id/textView3"
+        android:textSize="35dp"
+        android:layout_below="@+id/parties"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/othersexpense"
+        android:text="0"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/partiesedit"
+        android:layout_alignStart="@+id/partiesedit" />
+
+</RelativeLayout>

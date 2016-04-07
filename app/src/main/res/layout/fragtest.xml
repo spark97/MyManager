@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fffcdd">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="     Enter Expenses"
+        android:id="@+id/textView22"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:background="#ff0712"
+        android:elegantTextHeight="true"
+        android:editable="false"
+        android:gravity="left|center|fill"
+        android:shadowColor="#c3240c"
+        android:textSize="20dp"
+        android:textColorHighlight="#ff7710" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/slist"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="70dp" />
+
+    <Button
+        android:layout_width="336dp"
+        android:layout_height="match_parent"
+        android:text="Save Expenses"
+        android:id="@+id/saveexp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="-55dp"
+        android:background="#2576ff"
+        android:textColor="#ffffff"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
